@@ -13,19 +13,19 @@ $( document ).ready(function() {
 
 	function scroll_and_update_progress(){
 		//set current focus to the next question
-		current_input_focus += 1;
-		$(".question-row").eq(current_input_focus-1).removeClass("input-focus");
-		$(".question-row").eq(current_input_focus).addClass("input-focus");
+		// current_input_focus += 1;
+		// $(".question-row").eq(current_input_focus-1).removeClass("input-focus");
+		// $(".question-row").eq(current_input_focus).addClass("input-focus");
 
-		//autoscroll the page so that the next question in in focus on the center of the page
-		var el = $(".input-focus");
-		var elOffset = el.offset().top;
-		var elHeight = el.height();
-		var windowHeight = $(window).height();
-		var offset = elOffset - ((windowHeight / 2) - (elHeight / 2)) + 200;
-		$('html, body').animate({
-	        scrollTop: offset
-	    }, 300);
+		// //autoscroll the page so that the next question in in focus on the center of the page
+		// var el = $(".input-focus");
+		// var elOffset = el.offset().top;
+		// var elHeight = el.height();
+		// var windowHeight = $(window).height();
+		// var offset = elOffset - ((windowHeight / 2) - (elHeight / 2)) + 200;
+		// $('html, body').animate({
+	 //        scrollTop: offset
+	 //    }, 300);
 
 	    //fade other questions
 	    // $(".question-row").css("opacity",".5");

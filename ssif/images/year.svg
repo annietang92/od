@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="02-Inputs" transform="translate(-673.000000, -601.000000)" stroke="#1C85E8" stroke-width="1.4">
+            <g id="Group-17" transform="translate(270.000000, 375.000000)">
+                <g id="Group-10" transform="translate(372.000000, 227.000000)">
+                    <g id="Group" transform="translate(32.000000, 0.000000)">
+                        <polyline id="Stroke-4465" points="12.39935 16.95 0.04935 16.95 0.04935 24.1"></polyline>
+                        <polyline id="Stroke-4466" points="0.04935 17.6 0.04935 10.45 16.29935 10.45"></polyline>
+                        <polygon id="Stroke-4467" points="0.05 10.45 14.35 10.45 14.35 3.95 0.05 3.95"></polygon>
+                        <path d="M5,3.95 L5,10.45" id="Stroke-4468"></path>
+                        <path d="M10,10.45 L10,16.95" id="Stroke-4469"></path>
+                        <path d="M5,16.95 L5,23.45" id="Stroke-4470"></path>
+                        <path d="M20,24.1 L20,29.95" id="Stroke-4471"></path>
+                        <path d="M21.50442,8.03785 C22.21812,8.84645 23.44922,8.92445 24.25652,8.21075 L29.27452,3.65295 C29.66192,3.31105 29.89852,2.83005 29.93102,2.31265 C29.96352,1.79785 29.78802,1.28955 29.44612,0.90215 C28.73502,0.09485 27.50262,0.01685 26.69532,0.72925 L21.67732,5.28575 C21.28992,5.62895 21.05332,6.11125 21.02212,6.62605 C20.98962,7.14215 21.16252,7.65045 21.50442,8.03785 L21.50442,8.03785 Z" id="Stroke-4472" stroke-linecap="round"></path>
+                        <polyline id="Stroke-4473" stroke-linecap="round" points="21.51963 8.05306 25.68353 12.85266 20.80853 17.15306"></polyline>
+                        <path d="M17.64004,12.88113 C18.02354,11.43163 19.82794,11.17033 20.89004,12.23113 L25.44004,16.78113 C26.51124,17.85363 26.25124,19.66323 24.79004,20.03113 L13.09004,24.58113 L17.64004,12.88113 L17.64004,12.88113 Z" id="Stroke-4474" stroke-linecap="round"></path>
+                        <polyline id="Stroke-4475" points="23.46963 23.45 29.94883 23.45 29.94883 29.95 0.04883 29.95 0.04883 23.45 9.79883 23.45 10.44883 23.45 10.44883 29.95"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

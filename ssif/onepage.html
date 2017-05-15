@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <link href="styles.css" rel="stylesheet">
+<!--   <link href="animate.css" rel="stylesheet">
+ --></head>
+
+<body>
+  <div class="page-container">
+    <div class="nav-container">
+      <img src="images/header.png">
+    </div>
+    <!-- progress bar -->
+    <div class="bottom">
+      <div class="bar-container">
+        <div class="bar">
+          <div class="bar-progress">
+          </div>
+        </div>
+        <p><span class="percent">0</span>% complete</p>
+      </div>
+    </div>
+
+
+    <div class="form-container">
+
+    <!--  Basics section -->
+      <div class="section-container basics">
+        <div class="section-title">
+          <h1>Basics about your home</h1>
+          <!-- <p>Let's start with some basic information about your home. Answering these questions will help our valuations experts get a sense of the unique features of your home.</p> -->
+          <div class="line"></div>
+        </div>
+        <div class="section-content">
+          <!--  questions -->
+          <div class="section-questions">
+
+            <!-- question 1 -->
+            <div class="question-row input-focus">
+              <div class="question-container mls-grid">
+                <p>Start by telling us about your home details.</p>
+                <div class="mls">
+                  <img src="images/bedrooms.svg">
+                  <p>Bedrooms</p>
+                  <input class="text focus" type="text" placeholder="# beds">
+                </div>
+                <div class="mls">
+                  <img src="images/bathrooms.svg">
+                  <p>Bathrooms</p>
+                  <input class="text" type="text" placeholder="# baths">
+                </div>
+                <div class="mls">
+                  <img src="images/living.svg">
+                  <p>Living area</p>
+                  <input class="text" type="text" placeholder="#,### ft2">
+                </div>
+                <div class="mls">
+                  <img src="images/floors.svg">
+                  <p>Floors</p>
+                  <input class="text" type="text" placeholder="# floors">
+                </div>
+                <div class="mls">
+                  <img src="images/garage.svg">
+                  <p>Garage spaces</p>
+                  <input class="text" type="text" placeholder="# garage">
+                </div>
+                <div class="mls">
+                  <img src="images/year.svg">
+                  <p>Year built</p>
+                  <input class="text year" type="text" placeholder="year">
+                </div>
+              </div>
+              <div class="info">
+                <div class="light">
+                  <img src="images/lightbulb.svg">
+                </div>
+                <div class="info-blurb">
+                  <p> We were able to find some information about your home from its previous listing. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- question 2 -->
+            <div class="question-row">
+              <div class="question-container radio-selection">
+                <p>Does your home have a private pool?</p>
+                <div class="answer-choices radio-buttons">
+                  <input class="option" type="radio-selection" name="field" value="Yes, in-ground" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Yes, above-ground" readonly>
+                  <input class="option" type="radio-selection" name="field" value="No / community pool" readonly>
+                </div>
+              </div>
+              <div class="info">
+                <div class="light">
+                  <img src="images/lightbulb.svg">
+                </div>
+                <div class="info-blurb">
+                  <p> Homes in Phoenix with a private pool increase their value by $10k-$30k. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- question 3 -->
+            <div class="question-row">
+              <div class="question-container checkbox-selection">
+                <p>Does your home have any of the following? Select all that apply.</p>
+                <div class="answer-choices checkbox-selection">
+                  <input class="option" type="radio-selection" name="field" value="Permitted addition" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Unpermitted addition" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Leased solar panels" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Owned solar panels" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Foundation issues" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Gated community" readonly>
+                  <input class="option" type="radio-selection" name="field" value="None of these" readonly>
+                </div>
+              </div>
+              <div class="info">
+                <div class="light">
+                  <img src="images/lightbulb.svg">
+                </div>
+                <div class="info-blurb">
+                  <p> If you have permitted additions, your local Experience Manager will follow up with more details about photos we'll need to give you an accurate offer. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- question 4 -->
+            <div class="question-row">
+              <div class="question-container checkbox-selection">
+                <p>Have you renovated your home since you purchased it?</p>
+                <div class="answer-choices radio-buttons">
+                  <input class="option yes-reno" type="radio-selection" name="field" value="Yes, I have renovated" readonly>
+                  <input class="option no-reno" type="radio-selection" name="field" value="No renovations" readonly>
+                </div>
+              </div>
+              <div class="info">
+                <div class="light">
+                  <img src="images/lightbulb.svg">
+                </div>
+                <div class="info-blurb">
+                  <p> We’re specifically looking for upgrades to your home, not repairs of maintence work. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- question 5 -->
+            <div class="question-row optional">
+              <div class="question-container checkbox-selection">
+                <p>How much have you spent on renovations?</p>
+                <div class="answer-choices text-response">
+                  <input class="text upgrades" type="text" placeholder="$">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Kitchen section -->
+    <div class="section-container kitchen">
+      <div class="section-title">
+        <h1>Kitchen details</h1>
+        <div class="line"></div>
+      </div>
+
+      <!-- question 1 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>What's the condition of your kitchen?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Needs work" readonly>
+            <input class="option" type="radio-selection" name="field" value="Typical use" readonly>
+            <input class="option" type="radio-selection" name="field" value="Great condition" readonly>
+          </div>
+        </div>
+        <div class="info">
+          <div class="light">
+            <img src="images/lightbulb.svg">
+          </div>
+          <div class="info-blurb">
+            <p> Needs work: Kitchen is in need of significant cleaning / repairs. Typical use: Small chips, scuffs, rusty hinges, but all applicances are functional. Great condition: No repairs needed and all applicances are functional. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 2 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>Which countertops does your kitchen have?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Granite slab" readonly>
+            <input class="option" type="radio-selection" name="field" value="Granite tile" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other tile" readonly>
+            <input class="option" type="radio-selection" name="field" value="Corian" readonly>
+            <input class="option" type="radio-selection" name="field" value="Formica" readonly>
+            <input class="option" type="radio-selection" name="field" value="Quartz" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 3 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>What kind of kitchen appliances do you have?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="All stainless steel" readonly>
+            <input class="option" type="radio-selection" name="field" value="All black" readonly>
+            <input class="option" type="radio-selection" name="field" value="All white" readonly>
+            <input class="option" type="radio-selection" name="field" value="Mixed" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other" readonly>
+          </div>
+        </div>
+        <div class="info">
+            <div class="light">
+              <img src="images/lightbulb.svg">
+            </div>
+            <div class="info-blurb">
+              <p> Not only are stainless steel appliances great to look at, they're also one of the most impactful value adds to your kitchen.  </p>
+            </div>
+          </div>
+      </div>
+      <!-- question 4 -->
+      <div class="question-row">
+        <div class="question-container checkbox-selection">
+          <p>Which features does your kitchen have? Select all that apply.</p>
+          <div class="answer-choices checkbox-selection">
+            <input class="option" type="radio-selection" name="field" value="Kitchen island" readonly>
+            <input class="option" type="radio-selection" name="field" value="New cabinets" readonly>
+            <input class="option" type="radio-selection" name="field" value="Tile backsplash" readonly>
+            <input class="option" type="radio-selection" name="field" value="None of these" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bathroom section -->
+    <div class="section-container bathroom">
+      <div class="section-title">
+        <h1>Master bathroom details</h1>
+        <div class="line"></div>
+      </div>
+
+      <!-- question 1 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>What's the condition of your master bathroom?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Needs work" readonly>
+            <input class="option" type="radio-selection" name="field" value="Typical use" readonly>
+            <input class="option" type="radio-selection" name="field" value="Great condition" readonly>
+          </div>
+        </div>
+        <div class="info">
+          <div class="light">
+            <img src="images/lightbulb.svg">
+          </div>
+          <div class="info-blurb">
+            <p> Needs work: Kitchen is in need of significant cleaning / repairs. Typical use: Small chips, scuffs, rusty hinges, but all applicances are functional. Great condition: No repairs needed and all applicances are functional. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 2 -->
+      <div class="question-row">
+        <div class="question-container checkbox-selection">
+          <p>Which features does your master bathroom have? Select all that apply.</p>
+          <div class="answer-choices checkbox-selection">
+            <input class="option" type="radio-selection" name="field" value="Double sink" readonly>
+            <input class="option" type="radio-selection" name="field" value="Granite / tile counters" readonly>
+            <input class="option" type="radio-selection" name="field" value="Split tub & shower" readonly>
+            <input class="option" type="radio-selection" name="field" value="Custom tub / shower" readonly>
+            <input class="option" type="radio-selection" name="field" value="Tile shower walls" readonly>
+            <input class="option" type="radio-selection" name="field" value="Updated tile floors" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- homeyard section -->
+    <div class="section-container final">
+      <div class="section-title">
+        <h1>Home & yard details</h1>
+        <div class="line"></div>
+      </div>
+      <!-- question 1 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>What's the condition of the flooring in your main living area?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Heavily worn" readonly>
+            <input class="option" type="radio-selection" name="field" value="Typical use" readonly>
+            <input class="option" type="radio-selection" name="field" value="Great condition" readonly>
+          </div>
+        </div>
+        <div class="info">
+          <div class="light">
+            <img src="images/lightbulb.svg">
+          </div>
+          <div class="info-blurb">
+            <p> Needs work: Kitchen is in need of significant cleaning / repairs. Typical use: Small chips, scuffs, rusty hinges, but all applicances are functional. Great condition: No repairs needed and all applicances are functional. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 2 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>What kind of flooring is in your main living area?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Tile" readonly>
+            <input class="option" type="radio-selection" name="field" value="Laminate" readonly>
+            <input class="option" type="radio-selection" name="field" value="Hardwood" readonly>
+            <input class="option" type="radio-selection" name="field" value="Carpet" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 3 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>What is the condition of your interior paint?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Needs work" readonly>
+            <input class="option" type="radio-selection" name="field" value="Typical use" readonly>
+            <input class="option" type="radio-selection" name="field" value="Great condition" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 4 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>What is the condition of your backyard?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="No yard" readonly>
+            <input class="option" type="radio-selection" name="field" value="Needs work" readonly>
+            <input class="option" type="radio-selection" name="field" value="Partially landscaped" readonly>
+            <input class="option" type="radio-selection" name="field" value="Fully landscaped" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- photos section -->
+    <!-- <div class="section-container photo">
+      <div class="section-title">
+        <h1>Photos (optional)</h1>
+        <div class="line"></div>
+      </div>
+
+      <div class="question-row">
+        <div class="question-container large">
+          <p>These are the photos that we have from your previous listing.</p>
+          <img src="images/photos.png">
+        </div>
+      </div>
+
+      <div class="question-row">
+        <div class="question-container radio-selection sm">
+          <p>Anything missing or different? Click to add photos.</p>
+          <img src="images/upload.png">
+        </div>
+      </div>
+
+      <div class="question-row">
+        <div class="question-container radio-selection sm">
+          <p>Or, you can email us your photos, and we’ll automatically attach it to your information.</p>
+          <img src="images/photos-link.png">
+        </div>
+      </div>
+    </div> -->
+
+    <!-- your info section -->
+    <div class="section-container final">
+      <div class="section-title">
+        <h1>Your info</h1>
+        <div class="line"></div>
+      </div>
+
+      <!-- question 1 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>Where should we send your offer?</p>
+          <div class="answer-choices text-response">
+            <input class="text" type="text" placeholder="First">
+            <input class="text" type="text" placeholder="Last">
+            <input class="text" type="text" placeholder="Email">
+            <input class="text" type="text" placeholder="(101)234-567">
+          </div>
+        </div>
+      </div>
+
+<!--       <div class="question-row">
+        <div class="question-container">
+          <p>Your email</p>
+          <div class="answer-choices text-response">
+            <input class="text" type="text" placeholder="Email">
+          </div>
+        </div>
+      </div>
+
+      <div class="question-row">
+        <div class="question-container">
+          <p>Phone number (optional)</p>
+          <div class="answer-choices text-response">
+            <input class="text" type="text" placeholder="(101)234-567">
+          </div>
+        </div>
+      </div> -->
+
+      <!-- question 4 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>What is your relationship to this home?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="I own this home" readonly>
+            <input class="option" type="radio-selection" name="field" value="I represent the owner" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>What's your sale timeline?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="ASAP" readonly>
+            <input class="option" type="radio-selection" name="field" value="2-4 weeks" readonly>
+            <input class="option" type="radio-selection" name="field" value="4-6 weeks" readonly>
+            <input class="option" type="radio-selection" name="field" value="6+ weeks" readonly>
+            <input class="option" type="radio-selection" name="field" value="Just browsing" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>Are you looking for your next home?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Yes, actively looking" readonly>
+            <input class="option" type="radio-selection" name="field" value="Yes, casually looking" readonly>
+            <input class="option" type="radio-selection" name="field" value="No, not looking" readonly>
+            <input class="option" type="radio-selection" name="field" value="I found my next home" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>How flexible is your closing date? (Optional)</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Not flexible" readonly>
+            <input class="option" type="radio-selection" name="field" value="Within days" readonly>
+            <input class="option" type="radio-selection" name="field" value="Within weeks" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>Select the reasons for selling your home (Optional)</p>
+          <div class="answer-choices checkbox-selection">
+            <input class="option" type="radio-selection" name="field" value="Upgrading" readonly>
+            <input class="option" type="radio-selection" name="field" value="Downsizing" readonly>
+            <input class="option" type="radio-selection" name="field" value="Unlocking equity" readonly>
+            <input class="option" type="radio-selection" name="field" value="Job relocation" readonly>
+            <input class="option" type="radio-selection" name="field" value="Retiring" readonly>
+            <input class="option" type="radio-selection" name="field" value="Selling vacation home" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other" readonly>
+        </div>
+      </div>
+
+      <!-- question 6 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>How much do you think your home is worth? (Optional)</p>
+          <div class="answer-choices text-response">
+            <input class="text" type="text" placeholder="$###,###">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</body>
+</html>

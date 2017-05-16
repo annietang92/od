@@ -14,18 +14,23 @@ $( document ).ready(function() {
 	function scroll_and_update_progress(){
 		//set current focus to the next question
 		// current_input_focus += 1;
-		// $(".question-row").eq(current_input_focus-1).removeClass("input-focus");
+		// current_input_focus = $(this).closest(".question-row").index(".question-row") + 1;
+		// console.log(current_input_focus)
+		// $(".question-row").removeClass("input-focus");
 		// $(".question-row").eq(current_input_focus).addClass("input-focus");
 
-		// //autoscroll the page so that the next question in in focus on the center of the page
-		// var el = $(".input-focus");
-		// var elOffset = el.offset().top;
-		// var elHeight = el.height();
-		// var windowHeight = $(window).height();
-		// var offset = elOffset - ((windowHeight / 2) - (elHeight / 2)) + 200;
-		// $('html, body').animate({
-	 //        scrollTop: offset
-	 //    }, 300);
+		//autoscroll the page so that the next question in in focus on the center of the page
+		var el = $(".input-focus");
+		console.log(el)
+		var elOffset = el.offset().top;
+		var elHeight = el.height();
+		var windowHeight = $(window).height();
+		var offset = elOffset - ((windowHeight / 2) - (elHeight / 2)) + 200;
+
+		console.log(offset)
+		$('html, body').animate({
+	        scrollTop: offset
+	    }, 300);
 
 	    //fade other questions
 	    // $(".question-row").css("opacity",".5");
@@ -42,11 +47,23 @@ $( document ).ready(function() {
 
 	//after user focus on year, then focus out
 	$(".year").focusout(function(){
+
+		current_input_focus = $(".year").closest(".question-row").index(".question-row") + 1;
+		$(".question-row").removeClass("input-focus");
+		$(".question-row").eq(current_input_focus).addClass("input-focus");
 		scroll_and_update_progress();
 	})
 
 	//after user focus on upgrad, then focus out
+	$(".upgrades").focusin(function(){
+		current_input_focus = $(this).closest(".question-row").index(".question-row");
+		$(".question-row").removeClass("input-focus");
+		$(".question-row").eq(current_input_focus).addClass("input-focus");
+	})
 	$(".upgrades").focusout(function(){
+		current_input_focus = $(this).closest(".question-row").index(".question-row") + 1;
+		$(".question-row").removeClass("input-focus");
+		$(".question-row").eq(current_input_focus).addClass("input-focus");
 		scroll_and_update_progress();
 	})
 
@@ -56,33 +73,62 @@ $( document ).ready(function() {
     	if($(this).parent().hasClass('checkbox-selection')){
     		if ($(this).hasClass("selected")){
 	    		$(this).removeClass("selected");
+	    		if (!($(this).parent().children().hasClass("selected"))){
+	    			$(this).closest(".question-row").removeClass("completed-question");
+	    		}
 	    	}else{
 	    		$(this).addClass("selected");
+	    		$(this).closest(".question-row").addClass("completed-question");
+	    		current_input_focus = $(this).closest(".question-row").index(".question-row");
+				$(".question-row").removeClass("input-focus");
+				$(".question-row").eq(current_input_focus).addClass("input-focus");
 	    	}
 
-	 	//no single select
+	    	//don't update progress, but move input focus to next question
+	  //   	current_input_focus += 1;
+	  //   	$(".question-row").eq(current_input_focus-1).removeClass("input-focus");
+			// $(".question-row").eq(current_input_focus).addClass("input-focus");
+
+	 	//single select
     	}else{
 	    	if ($(this).hasClass("selected")){
+	    		
 	    		$(this).removeClass("selected");
+
+	    		//set current input focus to this question
+	    		current_input_focus = $(this).closest(".question-row").index(".question-row");
+	    		$(".question-row").removeClass("input-focus");
+				$(".question-row").eq(current_input_focus).addClass("input-focus");
+
+				$(this).closest(".question-row").removeClass("completed-question");
 	    	}else{
+
+	    		//change color when selected
 	    		$(this).parent().children().removeClass("selected");
 	    		$(this).addClass("selected");
-		
+
+
+	    		$(this).closest(".question-row").addClass("completed-question");
+
+	    		current_input_focus = $(this).closest(".question-row").index(".question-row") + 1;
+				$(".question-row").removeClass("input-focus");
+				$(".question-row").eq(current_input_focus).addClass("input-focus");
+
+	    		scroll_and_update_progress();
 	    	}
 	    }
-	    scroll_and_update_progress();
     })
 
-    // $(".yes-reno").click(function(){
-    // 	if($(this).hasClass('selected')){
-    // 		$(".optional").removeClass('hide');
-    // 	}else{
-    // 		$(".optional").addClass('hide');
-    // 	}
-    // })
+    $(".yes-reno").click(function(){
+    	if($(this).hasClass('selected')){
+    		$(".optional").removeClass('hide');
+    	}else{
+    		$(".optional").addClass('hide');
+    	}
+    })
 
-    // $(".no-reno").click(function(){
-    // 	$(".optional").addClass('hide');
-    // })
+    $(".no-reno").click(function(){
+    	$(".optional").addClass('hide');
+    })
 
 });

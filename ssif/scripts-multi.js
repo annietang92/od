@@ -146,4 +146,22 @@ $( document ).ready(function() {
     	$(".optional").addClass('hide');
     })
 
+    $('.perm-add-option').hover(
+     	function () {
+            $(".perm-add-tooltip").removeClass('hide')
+        }, 
+		function () {
+          	$(".perm-add-tooltip").addClass('hide')
+        }
+    );
+
+    $('.chem-add-option').hover(
+     	function () {
+            $(".chem-add-tooltip").removeClass('hide')
+        }, 
+		function () {
+          	$(".chem-add-tooltip").addClass('hide')
+        }
+    );
+
 });

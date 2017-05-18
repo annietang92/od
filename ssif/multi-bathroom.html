@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts-multi.js"></script>
+  <link href="styles.css" rel="stylesheet">
+<!--   <link href="animate.css" rel="stylesheet">
+ --></head>
+
+<body>
+  <div class="page-container">
+    <div class="nav-container">
+      <img src="images/header.png">
+    </div>
+    <!-- progress bar -->
+    <div class="bottom">
+      <div class="bar-container">
+        <div class="bar-multi">
+          <div class="bar-progress-multi-bathroom">
+          </div>
+          <p>Step: 3 / 6</p>
+          <!-- <p><span class="percent">0</span>% complete</p> -->
+        </div>
+        <div class="next-button">
+          <button class="half alt"><a href="multi-kitchen.html" class="b">Back</a></button>
+          <button class="half"><a href="multi-homeyard.html" class="b">Next</a></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-container">
+
+
+
+      <!-- Bathroom section -->
+      <div class="section-container bathroom">
+        <div class="section-title">
+          <h1>Next, tell us about your master bathroom.</h1>
+        </div>
+        <div class="line"></div>
+
+        <!-- question 1 -->
+        <div class="question-row">
+          <div class="question-container radio-selection">
+            <p>What's the condition of your master bathroom?</p>
+            <div class="answer-choices radio-buttons">
+              <input class="option" type="radio-selection" name="field" value="Needs work" readonly>
+              <input class="option" type="radio-selection" name="field" value="Typical use" readonly>
+              <input class="option" type="radio-selection" name="field" value="Great condition" readonly>
+            </div>
+          </div>
+          <div class="info">
+            <div class="light">
+              <img src="images/lightbulb.svg">
+            </div>
+            <div class="info-blurb">
+              <p> Needs work: Bathroom is in need of significant cleaning / repairs. <br><br>Typical use: Small chips, scuffs, rusty hinges, but all fixtures are functional.<br><br> Great condition: No repairs needed and all fixtures are functional. </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- question 2 -->
+        <div class="question-row">
+          <div class="question-container checkbox-selection">
+            <p>Which features does your master bathroom have? <span class="select-all">Select all that apply.</span></p>
+            <div class="answer-choices checkbox-selection">
+              <input class="option" type="radio-selection" name="field" value="Double sink" readonly>
+              <input class="option" type="radio-selection" name="field" value="Granite / tile counters" readonly>
+              <input class="option" type="radio-selection" name="field" value="Split tub & shower" readonly>
+              <input class="option" type="radio-selection" name="field" value="Custom tub / shower" readonly>
+              <input class="option" type="radio-selection" name="field" value="Tile shower walls" readonly>
+              <input class="option" type="radio-selection" name="field" value="Updated tile floors" readonly>
+              <input class="option" type="radio-selection" name="field" value="None of these" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</body>
+</html>

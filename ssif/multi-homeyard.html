@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts-multi.js"></script>
+  <link href="styles.css" rel="stylesheet">
+<!--   <link href="animate.css" rel="stylesheet">
+ --></head>
+
+<body>
+  <div class="page-container">
+    <div class="nav-container">
+      <img src="images/header.png">
+    </div>
+    <!-- progress bar -->
+    <div class="bottom">
+      <div class="bar-container">
+        <div class="bar-multi">
+          <div class="bar-progress-multi-homeyard">
+          </div>
+          <p>Step: 4 / 6</p>
+          <!-- <p><span class="percent">0</span>% complete</p> -->
+        </div>
+        <div class="next-button">
+          <button class="half alt"><a href="multi-bathroom.html" class="b">Back</a></button>
+          <button class="half"><a href="multi-you.html" class="b">Next</a></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-container">
+
+    
+    
+      <!-- homeyard section -->
+      <div class="section-container homeyard">
+        <div class="section-title">
+          <h1>Just a few final questions about your home.</h1>
+        </div>
+        <div class="line"></div>
+        <!-- question 1 -->
+        <div class="question-row">
+          <div class="question-container radio-selection">
+            <p>What's the condition of the flooring in your main living area?</p>
+            <div class="answer-choices radio-buttons">
+              <input class="option" type="radio-selection" name="field" value="Heavily worn" readonly>
+              <input class="option" type="radio-selection" name="field" value="Typical use" readonly>
+              <input class="option" type="radio-selection" name="field" value="Great condition" readonly>
+            </div>
+          </div>
+          <div class="info">
+            <div class="light">
+              <img src="images/lightbulb.svg">
+            </div>
+            <div class="info-blurb">
+              <p> Heavily worn: Lots of scuffs, scratches, stains, or multiple cracks or loose pieces.<br><br> Typical use: Small number of scuffs, scratches, stains, cracks or loose pieces<br><br> Great condition: No scuffs, scratches, stains, cracks, or loose pieces. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question-row">
+          <div class="question-container checkbox-selection">
+            <p>What kind of flooring do you have in your home? <span class="select-all">Select all that apply.</span></p>
+            <div class="answer-choices checkbox-selection"> 
+              <input class="option" type="radio-selection" name="field" value="Tile" readonly>
+              <input class="option" type="radio-selection" name="field" value="Laminate" readonly>
+              <input class="option" type="radio-selection" name="field" value="Hardwood" readonly>
+              <input class="option" type="radio-selection" name="field" value="Carpet" readonly>
+              <input class="option" type="radio-selection" name="field" value="Other" readonly>
+            </div>
+          </div>
+        </div>
+
+        <!-- question 2 -->
+        <!-- <div class="question-row">
+          <div class="question-container radio-selection">
+            <p>What kind of flooring is in your main living area?</p>
+            <div class="answer-choices radio-buttons">
+              <input class="option" type="radio-selection" name="field" value="Tile" readonly>
+              <input class="option" type="radio-selection" name="field" value="Laminate" readonly>
+              <input class="option" type="radio-selection" name="field" value="Hardwood" readonly>
+              <input class="option" type="radio-selection" name="field" value="Carpet" readonly>
+              <input class="option" type="radio-selection" name="field" value="Other" readonly>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- question 3 -->
+        <div class="question-row">
+          <div class="question-container radio-selection">
+            <p>What is the condition of your interior paint?</p>
+            <div class="answer-choices radio-buttons">
+              <input class="option" type="radio-selection" name="field" value="Needs work" readonly>
+              <input class="option" type="radio-selection" name="field" value="Typical use" readonly>
+              <input class="option" type="radio-selection" name="field" value="Great condition" readonly>
+            </div>
+          </div>
+           <div class="info">
+            <div class="light">
+              <img src="images/lightbulb.svg">
+            </div>
+            <div class="info-blurb">
+              <p> Needs work: Multiple chips, cracks, scuffing, stains, leaks, mismatched touch-ups, peeling, or
+non-white/non-neutral colors.<br><br> Typical use: Small number of chips, scratches, scuffs, touch-ups, fading paint, or visible damage.<br><br> Great condition: No visible chips, scuffs or visible damage. </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- question 3 -->
+        <!-- <div class="question-row">
+          <div class="question-container checkbox-selection">
+            <p>Does your interior paint have any of the following? <span class="select-all">Select all that apply.</span></p>
+            <div class="answer-choices checkbox-selection"> 
+              <input class="option" type="radio-selection" name="field" value="Chips or cracks" readonly>
+              <input class="option" type="radio-selection" name="field" value="Stains" readonly>
+              <input class="option" type="radio-selection" name="field" value="Non-neutral colors" readonly>
+              <input class="option" type="radio-selection" name="field" value="Faded areas" readonly>
+              <input class="option" type="radio-selection" name="field" value="Visible damage" readonly>
+              <input class="option" type="radio-selection" name="field" value="None of these" readonly>
+            </div>
+          </div>
+        </div> -->
+
+
+
+        <!-- question 4 -->
+        <div class="question-row">
+          <div class="question-container radio-selection">
+            <p>What is the condition of your backyard?</p>
+            <div class="answer-choices radio-buttons">
+              <input class="option" type="radio-selection" name="field" value="No yard" readonly>
+              <input class="option" type="radio-selection" name="field" value="No landscaping" readonly>
+              <input class="option" type="radio-selection" name="field" value="Partially landscaped" readonly>
+              <input class="option" type="radio-selection" name="field" value="Fully landscaped" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

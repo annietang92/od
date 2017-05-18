@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts-multi.js"></script>
+  <link href="styles.css" rel="stylesheet">
+<!--   <link href="animate.css" rel="stylesheet">
+ --></head>
+
+<body>
+  <div class="page-container">
+    <div class="nav-container">
+      <img src="images/header.png">
+    </div>
+    <!-- progress bar -->
+    <div class="bottom">
+      <div class="bar-container">
+        <div class="bar-multi">
+          <div class="bar-progress-multi">
+          </div>
+          <p>Step: 1 / 6</p>
+          <!-- <p><span class="percent">0</span>% complete</p> -->
+        </div>
+        <div class="next-button">
+          <button><a href="multi-kitchen.html" class="b">Next</a></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-container">
+
+    <!--  Basics section -->
+      <div class="section-container basics">
+        <div class="section-title">
+          <h1>Let's start with some basics about your home.</h1>
+          <!-- <p>Let's start with some basic information about your home. Answering these questions will help our valuations experts get a sense of the unique features of your home.</p> -->
+        </div>
+        <div class="line"></div>
+        <div class="section-content">
+          <!--  questions -->
+          <div class="section-questions">
+
+            <!-- question 1 -->
+            <div class="question-row input-focus">
+              <div class="question-container mls-grid">
+                <p>Start by telling us about your home details.</p>
+                <div class="mls">
+                  <img src="images/bedrooms.svg">
+                  <p>Bedrooms</p>
+                  <input class="text focus" type="text" placeholder="# beds">
+                </div>
+                <div class="mls">
+                  <img src="images/bathrooms.svg">
+                  <p>Bathrooms</p>
+                  <input class="text" type="text" placeholder="# baths">
+                </div>
+                <div class="mls">
+                  <img src="images/living.svg">
+                  <p>Living area</p>
+                  <input class="text" type="text" placeholder="#,### ft2">
+                </div>
+                <div class="mls">
+                  <img src="images/floors.svg">
+                  <p>Floors</p>
+                  <input class="text" type="text" placeholder="# floors">
+                </div>
+                <div class="mls">
+                  <img src="images/garage.svg">
+                  <p>Garage spaces</p>
+                  <input class="text" type="text" placeholder="# garage">
+                </div>
+                <div class="mls">
+                  <img src="images/year.svg">
+                  <p>Year built</p>
+                  <input class="text year" type="text" placeholder="year">
+                </div>
+              </div>
+              <div class="info">
+                <div class="light">
+                  <img src="images/lightbulb.svg">
+                </div>
+                <div class="info-blurb">
+                  <p> We were able to find some information about your home from its previous listing. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- question 2 -->
+            <div class="question-row">
+              <div class="question-container radio-selection">
+                <p>Does your home have a private pool?</p>
+                <div class="answer-choices radio-buttons">
+                  <input class="option" type="radio-selection" name="field" value="Yes, in-ground" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Yes, above-ground" readonly>
+                  <input class="option" type="radio-selection" name="field" value="No / community pool" readonly>
+                </div>
+              </div>
+              <div class="info">
+                <div class="light">
+                  <img src="images/lightbulb.svg">
+                </div>
+                <div class="info-blurb">
+                  <p> Homes in Phoenix with a private pool increase their value by $10k-$30k. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- question 3 -->
+            <div class="question-row">
+              <div class="question-container checkbox-selection">
+                <p>Does your home have any of the following? <span class="select-all">Select all that apply.</span></p>
+                <div class="answer-choices checkbox-selection">
+                  <input class="option perm-add-option" type="radio-selection" name="field" value="Permitted addition" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Unpermitted addition" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Leased solar panels" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Owned solar panels" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Foundation issues" readonly>
+                  <input class="option" type="radio-selection" name="field" value="Gated community" readonly>
+                  <input class="option chem-add-option" type="radio-selection" name="field" value="Chemical contamination" readonly>
+                  <input class="option" type="radio-selection" name="field" value="None of these" readonly>
+                </div>
+                <div class="perm-add-tooltip hide">
+                  <div class="tooltip-bg">
+                    <p>We ask that you provide photos of permitted additions. Your local Experience Manager will follow up with more details about the types of photos we'll need.</p>
+                  </div>
+                  <div class="point"></div>
+                </div>
+                <div class="chem-add-tooltip hide">
+                  <div class="tooltip-bg">
+                    <p>e.g. asbestos, methamphetamine</p>
+                  </div>
+                  <div class="point-chem"></div>
+                </div>
+              </div>
+              <!-- <div class="info">
+                <div class="light">
+                  <img src="images/lightbulb.svg">
+                </div>
+                <div class="info-blurb">
+                  <p> If you have permitted additions, your local Experience Manager will follow up with more details about photos we'll need to give you an accurate offer. </p>
+                </div>
+              </div> -->
+            </div>
+
+            <!-- question 4 -->
+            <div class="question-row">
+              <div class="question-container checkbox-selection">
+                <p>Have you renovated your home since you purchased it?</p>
+                <div class="answer-choices radio-buttons">
+                  <input class="option yes-reno" type="radio-selection" name="field" value="Yes, I have renovated" readonly>
+                  <input class="option no-reno" type="radio-selection" name="field" value="No renovations" readonly>
+                </div>
+              </div>
+              <div class="info">
+                <div class="light">
+                  <img src="images/lightbulb.svg">
+                </div>
+                <div class="info-blurb">
+                  <p> We’re specifically looking for upgrades to your home, not repairs of maintence work. </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- question 5 -->
+            <div class="question-row hide optional">
+              <div class="question-container checkbox-selection">
+                <p>How much have you spent on renovations?</p>
+                <div class="answer-choices text-response">
+                  <input class="text upgrades" type="text" placeholder="$">
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

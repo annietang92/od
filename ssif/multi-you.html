@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts-multi.js"></script>
+  <link href="styles.css" rel="stylesheet">
+<!--   <link href="animate.css" rel="stylesheet">
+ --></head>
+
+<body>
+  <div class="page-container">
+    <div class="nav-container">
+      <img src="images/header.png">
+    </div>
+    <!-- progress bar -->
+    <div class="bottom">
+      <div class="bar-container">
+        <div class="bar-multi">
+          <div class="bar-progress-multi-you">
+          </div>
+          <p>Step: 5 / 6</p>
+          <!-- <p><span class="percent">0</span>% complete</p> -->
+        </div>
+        <div class="next-button">
+          <button class="half alt"><a href="multi-homeyard.html" class="b">Back</a></button>
+          <button class="half"><a href="multi-verify.html" class="b">Next</a></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-container">
+    
+    <!-- your info section -->
+    <div class="section-container yourinfo">
+      <div class="section-title">
+        <h1>Now tell us about you and your sale.</h1>
+        <div class="line"></div>
+      </div>
+
+      <!-- question 1 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>Where should we send your offer?</p>
+          <div class="answer-choices text-response">
+            <div class="name">
+              <p>First name</p>
+              <input class="text name" type="text" placeholder="First">
+            </div>
+            <div class="name">
+              <p>Last name</p>
+              <input class="text name" type="text" placeholder="Last">
+            </div><br><br>
+            <div class="name">
+              <p>Email</p>
+              <input class="text name" type="text" placeholder="Email">
+            </div>
+            <div class="name">
+              <p>Phone number (optional)</p>
+              <input class="text name" type="text" placeholder="(101)234-567">
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="light">
+            <img src="images/lightbulb.svg">
+          </div>
+          <div class="info-blurb">
+            <p> Over 5,000 homeowners get an Opendoor offer every month.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 4 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>What is your relationship to this home?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="I own this home" readonly>
+            <input class="option" type="radio-selection" name="field" value="I represent the owner" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>What's your sale timeline?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="ASAP" readonly>
+            <input class="option" type="radio-selection" name="field" value="2-4 weeks" readonly>
+            <input class="option" type="radio-selection" name="field" value="4-6 weeks" readonly>
+            <input class="option" type="radio-selection" name="field" value="6+ weeks" readonly>
+            <input class="option" type="radio-selection" name="field" value="Just browsing" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>Are you looking for your next home?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Yes, actively looking" readonly>
+            <input class="option" type="radio-selection" name="field" value="Yes, casually looking" readonly>
+            <input class="option" type="radio-selection" name="field" value="No, not looking" readonly>
+            <input class="option" type="radio-selection" name="field" value="I found my next home" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>How flexible is your closing date? (Optional)</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Not flexible" readonly>
+            <input class="option" type="radio-selection" name="field" value="Within days" readonly>
+            <input class="option" type="radio-selection" name="field" value="Within weeks" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>Select the reasons for selling your home. <span class="select-all">Select all that apply.</span> (Optional)</p>
+          <div class="answer-choices checkbox-selection">
+            <input class="option" type="radio-selection" name="field" value="Upgrading" readonly>
+            <input class="option" type="radio-selection" name="field" value="Downsizing" readonly>
+            <input class="option" type="radio-selection" name="field" value="Unlocking equity" readonly>
+            <input class="option" type="radio-selection" name="field" value="Job relocation" readonly>
+            <input class="option" type="radio-selection" name="field" value="Retiring" readonly>
+            <input class="option" type="radio-selection" name="field" value="Selling vacation home" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 6 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>How much do you think your home is worth? (Optional)</p>
+          <div class="answer-choices text-response">
+            <input class="text" type="text" placeholder="$###,###">
+          </div>
+        </div>
+      </div>
+
+      <!-- question 6 -->
+      <div class="question-row">
+        <div class="question-container">
+          <p>What else should we know about your or your home? (Optional)</p>
+          <div class="answer-choices text-response ">
+            <textarea class="text long" rows="5" cols="100" type="text" placeholder="For example, tell us about your view, your Viking oven, your LG dishwasher with quiet mode, or your custom cactus garden. More information always helps."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

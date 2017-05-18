@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts-multi.js"></script>
+  <link href="styles.css" rel="stylesheet">
+<!--   <link href="animate.css" rel="stylesheet">
+ --></head>
+
+<body>
+  <div class="page-container">
+    <div class="nav-container">
+      <img src="images/header.png">
+    </div>
+    <!-- progress bar -->
+    <div class="bottom">
+      <div class="bar-container">
+        <div class="bar-multi">
+          <div class="bar-progress-multi-kitchen">
+          </div>
+          <p>Step: 2 / 6</p>
+          <!-- <p><span class="percent">0</span>% complete</p> -->
+        </div>
+        <div class="next-button">
+          <button class="half alt"><a href="multi.html" class="b">Back</a></button>
+          <button class="half"><a href="multi-bathroom.html" class="b">Next</a></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-container">
+
+    
+    <!-- Kitchen section -->
+    <div class="section-container kitchen ">
+      <div class="section-title">
+        <h1>Next, tell us about your kitchen.</h1>
+      </div>
+      <div class="line"></div>
+
+      <!-- question 1 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>What's the condition of your kitchen?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Needs work" readonly>
+            <input class="option" type="radio-selection" name="field" value="Typical use" readonly>
+            <input class="option" type="radio-selection" name="field" value="Great condition" readonly>
+          </div>
+        </div>
+        <div class="info">
+          <div class="light">
+            <img src="images/lightbulb.svg">
+          </div>
+          <div class="info-blurb">
+            <p> Needs work: Kitchen is in need of significant cleaning / repairs. <br><br>Typical use: Small chips, scuffs, rusty hinges, but all applicances are functional. <br><br> Great condition: No repairs needed and all applicances are functional. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 2 -->
+      <div class="question-row">
+        <div class="question-container radio-selection">
+          <p>Which countertops does your kitchen have?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="Granite slab" readonly>
+            <input class="option" type="radio-selection" name="field" value="Granite tile" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other tile" readonly>
+            <input class="option" type="radio-selection" name="field" value="Corian" readonly>
+            <input class="option" type="radio-selection" name="field" value="Formica" readonly>
+            <input class="option" type="radio-selection" name="field" value="Quartz" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other / Don't know" readonly>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 3 -->
+      <div class="question-row test-index">
+        <div class="question-container radio-selection">
+          <p>What kind of kitchen appliances do you have?</p>
+          <div class="answer-choices radio-buttons">
+            <input class="option" type="radio-selection" name="field" value="All stainless steel" readonly>
+            <input class="option" type="radio-selection" name="field" value="All black" readonly>
+            <input class="option" type="radio-selection" name="field" value="All white" readonly>
+            <input class="option" type="radio-selection" name="field" value="Mixed" readonly>
+            <input class="option" type="radio-selection" name="field" value="Other" readonly>
+          </div>
+        </div>
+        <div class="info">
+            <div class="light">
+              <img src="images/lightbulb.svg">
+            </div>
+            <div class="info-blurb">
+              <p> Not only are stainless steel appliances great to look at, they're also one of the most impactful value adds to your kitchen.  </p>
+            </div>
+          </div>
+      </div>
+      <!-- question 4 -->
+      <div class="question-row">
+        <div class="question-container checkbox-selection">
+          <p>Which features does your kitchen have? <span class="select-all">Select all that apply.</span></p>
+          <div class="answer-choices checkbox-selection">
+            <input class="option" type="radio-selection" name="field" value="Kitchen island" readonly>
+            <input class="option" type="radio-selection" name="field" value="New cabinets" readonly>
+            <input class="option" type="radio-selection" name="field" value="Tile backsplash" readonly>
+            <input class="option" type="radio-selection" name="field" value="None of these" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

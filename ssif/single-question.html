@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="single-scripts.js"></script>
+  <link href="single-styles.css" rel="stylesheet">
+<!--   <link href="animate.css" rel="stylesheet">
+ --></head>
+
+<body>
+  <div class="page-container">
+    <div class="nav-container"><img src="images/header.png"></div>
+    <div class="form-container">
+      <div class="question-controls-container">
+        <div class="back-button"><img src="images/back.png"></div>
+        <div class = "question-box-container">
+          <div class="question-content-container">
+
+            <div class="bar">
+              <div class="bar-progress">
+              </div>
+            </div><!--bar-->
+
+            <div class="question">
+
+              <div class="question-main">
+                <h2>First, How many bedrooms are in your home?</h2>
+              </div>
+              <div class="question-sub">
+                <p></p>
+              </div>
+              <div class="answers">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6+</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>How many <u>full</u> bathrooms are in your home?</h2>
+              </div>
+              <div class="question-sub">
+                <p>Bathrooms with shower, tub, sink, and toilet</p>
+              </div>
+              <div class="answers">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6+</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>What about <u>half</u> bathrooms?</h2>
+              </div>
+              <div class="question-sub">
+                <p>Bathrooms with just sink and toilet</p>
+              </div>
+              <div class="answers">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6+</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>How big is your home?</h2>
+              </div>
+              <div class="question-sub">
+                <p>Your total living area size in sq ft</p>
+              </div>
+              <div class="answers">
+                <input class="text focus" type="text" placeholder="sq ft">
+              </div><!--answers-->
+              <div class="next-button">
+                <h3>Next</h3>
+              </div>
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>How many floors are there?</h2>
+              </div>
+              <div class="question-sub">
+                <p></p>
+              </div>
+              <div class="answers">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3+</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>And garage spots?</h2>
+              </div>
+              <div class="question-sub">
+                <p>We are looking for covered garage spots only.</p>
+              </div>
+              <div class="answers">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">4+</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>Does your home have any of the following? Select all that apply.</h2>
+              </div>
+              <div class="question-sub">
+                <p></p>
+              </div>
+              <div class="answers">
+                <div class="button two-col">Unpermitted additions</div>
+                <div class="button two-col">Permitted additions</div>
+                <div class="button two-col">Leased solar panels</div>
+                <div class="button two-col">Owned solar panels</div>
+                <div class="button two-col">Gated community</div>
+                <div class="button two-col">Foundation issues</div>
+                <div class="button two-col">Chemical contamination</div>
+                <div class="button two-col">None of these</div>
+              </div><!--answers-->
+              <div class="next-button">
+                <h3>Next</h3>
+              </div>
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>Do you have a private pool?</h2>
+              </div>
+              <div class="question-sub">
+                <p></p>
+              </div>
+              <div class="answers">
+                <div class="button one-col">No pool</div>
+                <div class="button one-col">Community pool</div>
+                <div class="button one-col">Yes, in-ground pool</div>
+                <div class="button one-col">Yes, above-ground pool</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>How much have you spent on upgrading your home since purchasing it?</h2>
+              </div>
+              <div class="question-sub">
+                <p>We’re specifically looking for upgrades, not repairs or maintence work.</p>
+              </div>
+              <div class="answers">
+                <div class="button one-col">No upgrades</div>
+                <div class="button one-col">Less than $10K</div>
+                <div class="button one-col">$10K - $50K</div>
+                <div class="button one-col">More than 50K</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>Does your kitchen have scuffs, stains or chips?</h2>
+              </div>
+              <div class="question-sub">
+                <p>Primarily, your appliances, flooring, cabinets, countertops and walls</p>
+              </div>
+              <div class="answers">
+                <div class="button one-col">Many, kitchen needs work</div>
+                <div class="button one-col">Some blemishes</div>
+                <div class="button one-col">None, nearly perfect</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>Which countertops does your kitchen have?</h2>
+              </div>
+              <div class="question-sub">
+              </div>
+              <div class="answers">
+                <div class="button two-col">Granite slab</div>
+                <div class="button two-col">Granite tile</div>
+                <div class="button two-col">Other tile</div>
+                <div class="button two-col">Corian</div>
+                <div class="button two-col">Formica</div>
+                <div class="button two-col">Quartz</div>
+                <div class="button two-col">Other</div>
+                <div class="button two-col">I'm not sure</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>What kind of kitchen appliances do you have?</h2>
+              </div>
+              <div class="question-sub">
+              </div>
+              <div class="answers">
+                <div class="button two-col">All stainless steel</div>
+                <div class="button two-col">All black</div>
+                <div class="button two-col">All white</div>
+                <div class="button two-col">Mixed</div>
+                <div class="button two-col">No appliances</div>
+                <div class="button two-col">Other</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>What is the flooring in your kitchen?</h2>
+              </div>
+              <div class="question-sub">
+              </div>
+              <div class="answers">
+                <div class="button two-col">Hardwood</div>
+                <div class="button two-col">Laminate</div>
+                <div class="button two-col">Tile</div>
+                <div class="button two-col">Carpet</div>
+                <div class="button two-col">Linoleum/Vinyl</div>
+                <div class="button two-col">Other</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>Which features does your kitchen have? Select all that apply.</h2>
+              </div>
+              <div class="question-sub">
+              </div>
+              <div class="answers">
+                <div class="button two-col">Kitchen island</div>
+                <div class="button two-col">New cabinets</div>
+                <div class="button two-col">Tile backsplash</div>
+                <div class="button two-col">None of these</div>
+              </div><!--answers-->
+              <div class="next-button">
+                <h3>Next</h3>
+              </div>
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>Does your master bathroom have scuffs, stains, cracks or loose pieces?</h2>
+              </div>
+              <div class="question-sub">
+                <p>Primarily, your toilet, shower, vanity, cabinets, countertops and floor.</p>
+              </div>
+              <div class="answers">
+                <div class="button one-col">Many, master bathroom needs work</div>
+                <div class="button one-col">Some blemishes</div>
+                <div class="button one-col">None, nearly perfect</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+            <div class="question">
+              <div class="question-main">
+                <h2>What is the flooring in your master bathroom?</h2>
+              </div>
+              <div class="question-sub">
+              </div>
+              <div class="answers">
+                <div class="button two-col">Hardwood</div>
+                <div class="button two-col">Laminate</div>
+                <div class="button two-col">Tile</div>
+                <div class="button two-col">Carpet</div>
+                <div class="button two-col">Linoleum/Vinyl</div>
+                <div class="button two-col">Other</div>
+              </div><!--answers-->
+            </div><!--question-->
+
+
+          </div><!--question-content-->
+        </div><!--question box-->
+      </div><!--question controls-->
+    </div> <!--form container-->
+  </div><!--page container-->
+</body>
+</html>

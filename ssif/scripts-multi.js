@@ -12,14 +12,9 @@ $( document ).ready(function() {
 	// $(".input-focus").css("opacity","1");
 
 	function check_page_load(){
-		// if($(".basics .question-row").not(".completed-question").length == 0 ) {
-		//     $(".kitchen").removeClass("display-none");
-		//     $(".bathroom").removeClass("display-none");
-		//     $(".homeyard").removeClass("display-none");
-		// }
-		// if($(".homeyard .question-row").not(".completed-question").length == 0 ) {
-		//     $(".yourinfo").removeClass("display-none");
-		// }
+		if($(".question-row").not(".completed-question").length == 0 ) {
+		    // $("button").css("opacity","1")
+		}
 	}
 
 	function scroll_and_update_progress(){

@@ -278,7 +278,7 @@ button:focus{
 .question-box-container{
 	width:700px;
 	min-height: 450px;
-	transition: 2s;
+	transition: .2s;
 	background-color: white;
 	margin: 0 auto;
 	display: inline-block;

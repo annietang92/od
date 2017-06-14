@@ -1,9 +1,8 @@
 $( document ).ready(function() {
 	var question_num = $(".question").length;
 	var cur_question = 2
-	$(".question:nth-child("+cur_question+")").show()
-	$(".question:nth-child("+cur_question+")").css("opacity","1")
-	$(".question:nth-child("+cur_question+")").css("margin","0 auto")
+	$(".question:nth-child("+cur_question+")").fadeIn()
+	$(".question:nth-child("+cur_question+")").animate({opacity: 1, "margin-right":"+=30px","margin-left":"-=30px"}, 150) 
 
 
 	$(".button").click(function(){

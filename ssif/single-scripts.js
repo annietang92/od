@@ -33,4 +33,17 @@ $( document ).ready(function() {
 		var cur_progress = ((1/question_num)*cur_question)*480
 		$(".bar-progress").css("width",cur_progress+"px")
 	})
+
+	$(".od_button").click(function(){
+		$(".bar").removeClass("hide")
+
+		$(this).parents(".single-question").animate({opacity: 0, "margin-right":"+=30px","margin-left":"-=30px"}, 150) 
+		$(this).parents(".single-question").delay().hide(1);
+		cur_question += 1
+		$(".single-question:nth-child("+cur_question+")").delay(200).show(1);
+		$(".single-question:nth-child("+cur_question+")").delay(200).animate({opacity: 1, "margin-right":"+=30px","margin-left":"-=30px"}, 150) 
+		var cur_progress = ((1/question_num)*cur_question)*480
+		$(".bar-progress").css("width",cur_progress+"px")
+
+	})
 });

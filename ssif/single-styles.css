@@ -74,6 +74,9 @@ p{
 	opacity: 0;
 	margin:0 0 0 60px;
 }
+.narrow{
+	width:500px;
+}
 .question-intro{
 	padding: 0 50px;
 	border-radius: 2px;
@@ -122,7 +125,22 @@ p{
 .one-col{
 	width: 280px;
 }
+.od_button{
+	background-color: #1C85E8;
+	padding:20px;
+	width: 150px;
+	text-align: center;
+	font-family: Graphik;
+	color: white;
+	border-radius: 2px;
+	margin: 0 auto 60px auto;
+	transition:.2s;
+}
 
+.od_button:hover{
+	background-color: #03476B;
+	cursor: pointer;
+}
 textarea, input{
 	color:#525975;
 	font-family: Graphik;

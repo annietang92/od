@@ -91,11 +91,11 @@ p{
 	text-align: left;
     margin-left: 80px;
 }
-.next-button{
+.next-button, .skip-button{
 	float: right;
 	margin-bottom: 20px;
 }
-.next-button:hover{
+.next-button:hover, .skip-button:hover{
 	cursor: pointer;
 }
 
@@ -123,12 +123,12 @@ p{
 	width: 200px;
 }
 .one-col{
-	width: 280px;
+	width: 380px;
 }
 .od_button{
 	background-color: #1C85E8;
 	padding:20px;
-	width: 150px;
+	width: 200px;
 	text-align: center;
 	font-family: Graphik;
 	color: white;
@@ -137,8 +137,28 @@ p{
 	transition:.2s;
 }
 
+.sm-margin-below{
+	margin-bottom: 20px;
+}
+
 .od_button:hover{
 	background-color: #03476B;
+	cursor: pointer;
+}
+
+.od_button_other{
+	border: 2px solid #e6e6e6;
+	padding:20px;
+	width: 200px;
+	text-align: center;
+	font-family: Graphik;
+	color: #525975;
+	border-radius: 2px;
+	margin: 0 auto 60px auto;
+	transition:.2s;
+}
+.od_button_other:hover{
+	background-color: #f0f0f0;
 	cursor: pointer;
 }
 textarea, input{
@@ -191,29 +211,6 @@ textarea.text::placeholder, input.text::placeholder{
 
 .laststep input.option{
 	width:220px;
-}
-input.option{
-	padding: 15px 12px;
-	width:170px;
-	font-size: 14px;
-	color:#70828f;
-	text-align: center;
-	border-radius: 30px;
-	margin:20px 10px 0px 0;
-	// border:1px solid #e6e6e6;
-	box-shadow: 0px 4px 8px #f0f0f0;
-	border: 1px solid #f0f0f0;
-	user-select: none;
-}
-input.option:hover{
-	cursor: pointer;
-	box-shadow: 0px 8px 20px #e6e6e6;
-
-	// background-color: #fafafa;
-}
-input.option:focus{
-	outline:none;
-	box-shadow: 0px 4px 15px #e0e0e0;
 }
 
 input.selected{
@@ -315,7 +312,7 @@ button:focus{
 .question-box-container{
 	width:700px;
 	min-height: 450px;
-	transition: .2s;
+	transition: .5s;
 	background-color: white;
 	margin: 0 auto;
 	display: inline-block;
@@ -337,6 +334,9 @@ button:focus{
     vertical-align: top;
     margin-top: 230px;
     padding-right: 15px;
+}
+.back-button:hover{
+	cursor: pointer;
 }
 .section-container{
 	margin: 0 auto;

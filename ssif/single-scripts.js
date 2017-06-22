@@ -10,7 +10,7 @@ $( document ).ready(function() {
 
 
 	//calculating progress
-	var question_num = $(".single-question").length-4;
+	var question_num = $(".single-question").length;
 	
 	//show current question
 	$(".single-question:nth-child("+cur_question+")").show()
@@ -129,7 +129,7 @@ $( document ).ready(function() {
 	$(".od_button").click(function(){
 		cur_question += 1
 		//show side bar
-		$(".completion-tracker").css("opacity","1");
+		// $(".completion-tracker").css("opacity","1");
 
 		//show bottom buttons
 		$(".back-next-info").show();

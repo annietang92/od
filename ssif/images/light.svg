@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 940</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.7" stroke-linejoin="round">
+        <g id="17_input" transform="translate(-568.000000, -692.000000)" stroke="#1C85E8" stroke-width="0.807692308">
+            <g id="Group" transform="translate(568.000000, 691.000000)">
+                <g id="Group-16">
+                    <g id="Group-940" transform="translate(0.000000, 1.000000)">
+                        <path d="M13.5882353,7.08333333 C13.5882353,10.765 10.6383529,13.75 7,13.75 C3.36082353,13.75 0.411764706,10.765 0.411764706,7.08333333 C0.411764706,3.40166667 3.36082353,0.416666667 7,0.416666667 C10.6383529,0.416666667 13.5882353,3.40166667 13.5882353,7.08333333 L13.5882353,7.08333333 Z" id="Stroke-292"></path>
+                        <path d="M4.94117647,15.4166667 L9.05882353,15.4166667" id="Stroke-294"></path>
+                        <path d="M4.94117647,17.0833333 L9.05882353,17.0833333" id="Stroke-296"></path>
+                        <path d="M4.94117647,18.75 L9.05882353,18.75" id="Stroke-298"></path>
+                        <path d="M7,18.75 L7,19.5833333" id="Stroke-300"></path>
+                        <polyline id="Stroke-302" points="9.47058824 9.58333333 8.23529412 10.8333333 7 9.58333333 5.76470588 10.8333333 4.52941176 9.58333333"></polyline>
+                        <path d="M7,9.58333333 L7,13.75" id="Stroke-304"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

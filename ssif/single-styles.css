@@ -420,7 +420,7 @@ button:focus{
 .question-controls-container{
 	width:1020px;
 	margin: 0 auto;
-	padding-top: 60px;
+	padding-top: 50px;
 	// display: inline-block;
 }
 .completion-tracker{

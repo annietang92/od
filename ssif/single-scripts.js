@@ -10,7 +10,7 @@ $( document ).ready(function() {
 
 
 	//calculating progress
-	var question_num = $(".single-question").length;
+	var question_num = $(".single-question").length - 4;
 	
 	//show current question
 	$(".single-question:nth-child("+cur_question+")").show()
@@ -95,6 +95,7 @@ $( document ).ready(function() {
 		if ($(this).hasClass("disabled")){
 		}else{
 			cur_question += 1
+			console.log(cur_question)
 
 			// animate current question to the left and hide
 			$(".single-question:nth-child("+(cur_question-1)+")").animate({opacity: 0, "margin-right":"+=30px","margin-left":"-=30px"}, 150) 
@@ -118,7 +119,7 @@ $( document ).ready(function() {
 			adjustHeight();
 			console.log(cur_question)
 
-			if (cur_question == 29){
+			if (cur_question == 26){
 				console.log("dafsd")
 				$(".next-button").hide();
 				$(".next-button-finish").removeClass("hide");

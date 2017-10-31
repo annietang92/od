@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="countUp.js"></script>
+  
+</head>
+<body>
+  <!--set the right bg to white-->
+  <div class="bg-right"></div>
+
+  <!--header-->
+  <div class="header">
+    <div class="main-container">
+      <img src="images/logo-opendoor.svg">
+      </img>
+      <div class="sign-in">
+        <a href="#">Sign in</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container">
+     <!--breadcrumb-->
+    <!-- <div class="breadcrumb-container">
+      <div class="breadcrumb active">
+        <p>Add home details</p>
+      </div>
+      <div class="breadcrumb">
+        <p>See refined home value</p>
+      </div>
+      <div class="breadcrumb">
+        <p>Add unique features & photos</p>
+      </div>
+      <div class="breadcrumb">
+        <p>Get your Exact Value</p>
+      </div>
+    </div> -->
+
+    <div class="main-left">
+      <div class="estimate">
+        <h2 class="blue" id="bottom-range">$145,000</h2>
+        <h3 class="blue">to</h3>
+        <h2 class="blue" id ="top-range">$165,000</h2>
+        <h6 class="disclaimer">*Adjustments are based on the avg. price of features in similar homes.</h6>
+      </div>
+    </div>
+
+    <div class="main-right">
+      <!-- question 1-->
+      <div class="question">
+
+        <h1>1 / 9</h1>
+        
+        <h5>Confirm the following public records information about your home</h5>
+        <div class="sm-spacer"></div>
+        <h6 class="gray">Bedrooms</h6>
+        <input class="text" type="text" value="4"></input> 
+        <h6 class="gray">Bathrooms</h6>
+        <input class="text" type="text" value="2"></input> 
+        <h6 class="gray">Living area size (sq ft)</h6>
+        <input class="text" type="text" value="1,234"></input> 
+      </div>
+
+      <!-- question 2-->
+      <div class="question hide">
+        <h1>2 / 9</h1>
+        <h5>Which countertops does your kitchen have?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div class="single-select premium">
+            <h6 class="green">PREMIUM</h6>
+            <h5 class="gray">Granite slab</h5>
+          </div>
+          <div class="single-select premium">
+            <h6 class="green">PREMIUM</h6>
+            <h5 class="gray">Quartz</h5>
+          </div>
+          <div class="single-select premium">
+            <h6 class="green">PREMIUM</h6>
+            <h5 class="gray">Marble</h5>
+          </div>
+          <div class="single-select upgraded">
+            <h6 class="yellow">UPGRADED</h6>
+            <h5 class="gray">Granite tile</h5>
+          </div>
+          <div class="single-select upgraded">
+            <h6 class="yellow">UPGRADED</h6>
+            <h5 class="gray">Corian</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Other tile</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Formica</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 3-->
+      <div class="question hide">
+        <h1>3 / 9</h1>
+        <h5>What kind of kitchen appliances do you have?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div class="single-select premium">
+            <h6 class="green">PREMIUM</h6>
+            <h5 class="gray">All stainless steel</h5>
+          </div>
+          <div class="single-select upgraded">
+            <h6 class="yellow">UPGRADED</h6>
+            <h5 class="gray">All black</h5>
+          </div>
+          <!-- <div class="single-select upgraded">
+            <h6 class="yellow">UPGRADED</h6>
+            <h5 class="gray">Mixed stainless / black</h5>
+          </div>
+          <div class="single-select upgraded">
+            <h6 class="yellow">UPGRADED</h6>
+            <h5 class="gray">Mixed stainless / white</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Mixed white / black</h5>
+          </div> -->
+          <div class="single-select no-tag">
+            <h5 class="gray">All white</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Mixed</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 4-->
+      <div class="question hide">
+        <h1>4 / 9</h1>
+        <h5>Does your kitchen have any of the following features?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div id="checkboxes">
+            <ul>
+              <li><input type="checkbox" class="premium"> <span class="checkbox-label"><h6 class="green">PREMIUM</h6>New cabinets</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label upgraded"><h6 class="yellow">UPGRADED</h6>Tile backsplash</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label"><h6 class="yellow">UPGRADED</h6>Kitchen island</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 5-->
+      <div class="question hide">
+        <h1>5 / 9</h1>
+        <h5>Which features does your master bathroom have?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div id="checkboxes">
+            <ul>
+              <li><input type="checkbox" class="premium"> <span class="checkbox-label"><h6 class="green">PREMIUM</h6>Double sink</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label"><h6 class="yellow">UPGRADED</h6>Granite / tile counters</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label"><h6 class="yellow">UPGRADED</h6>Separate tub & shower</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label"><h6 class="yellow">UPGRADED</h6>Tile shower walls</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label"><h6 class="yellow">UPGRADED</h6>New tile floors</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 6-->
+      <div class="question hide">
+        <h1>6 / 9</h1>
+        <h5>What kind of flooring is in your main living area?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div class="single-select">
+            <h6 class="green">PREMIUM</h6>
+            <h5 class="gray">Hardwood</h5>
+          </div>
+          <div class="single-select">
+            <h6 class="yellow">UPGRADED</h6>
+            <h5 class="gray">Carpet</h5>
+          </div>
+          <div class="single-select">
+            <h6 class="yellow">UPGRADED</h6>
+            <h5 class="gray">Tile</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Laminate</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Other</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 7-->
+      <div class="question hide">
+        <h1>7 / 9</h1>
+        <h5>Is your backyard landscaped?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div class="single-select premium">
+            <h6 class="green">PREMIUM</h6>
+            <h5 class="gray">Fully landscaped</h5>
+          </div>
+          <div class="single-select">
+            <h6 class="yellow upgraded">UPGRADED</h6>
+            <h5 class="gray">Partially landscaped</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Not landscaped</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Other</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 8-->
+      <div class="question hide">
+        <h1>8 / 9</h1>
+        <h5>Does your home have any of the following features?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div id="checkboxes">
+            <ul>
+              <li><input type="checkbox" class="premium"> <span class="checkbox-label"><h6 class="green">PREMIUM</h6>Private pool</span></li>
+              <li><input type="checkbox" class="premium"> <span class="checkbox-label"><h6 class="green">PREMIUM</h6>Spa / heated pool</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label"><h6 class="yellow">UPGRADED</h6>Fireplace</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label"><h6 class="yellow">UPGRADED</h6>Vaulted ceilings (10'+)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="buttons">
+        <div class="blue-button">
+          Next
+        </div>
+        <div class="white-button">
+          Save and return to my home profile
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+</html>

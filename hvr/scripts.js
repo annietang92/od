@@ -1,4 +1,12 @@
 $( document ).ready(function() {
+	// var slider = document.getElementById("myRange");
+	// var output = document.getElementById("demo");
+	// output.innerHTML = slider.value;
+
+	// slider.oninput = function() {
+	//   output.innerHTML = this.value;
+	// }
+
 
 	var options={
 		useEasing: true, 
@@ -17,7 +25,7 @@ $( document ).ready(function() {
 
 	var cur_question = 1
 	$(".blue-button").click(function(){
-		if (cur_question == 8){
+		if (cur_question == 9){
 			cur_question = 1
 		}else{
 			cur_question +=1
@@ -30,6 +38,17 @@ $( document ).ready(function() {
 		console.log(page_top_range);
 		console.log(cur_top_range);
 	})
+	$("input[type='range']").change(function() {
+	  	console.log(this)
+		cur_bottom_range += (this.value-3)*1550;
+		cur_top_range += (this.value-3)*1550;
+		var updateLower = new CountUp('bottom-range', cur_bottom_range-1000, cur_bottom_range, 0, .5, options);
+		var updateHigher = new CountUp('top-range', cur_top_range-1000, cur_top_range, 0,  .5, options);
+		updateLower.start();
+		updateHigher.start();
+		console.log('got here')
+		console.log(this.value)
+	});
 
 	function selectAndUpdateRange(element){
 		$(".single-select").removeClass("active");

@@ -1,12 +1,4 @@
 $( document ).ready(function() {
-	// var slider = document.getElementById("myRange");
-	// var output = document.getElementById("demo");
-	// output.innerHTML = slider.value;
-
-	// slider.oninput = function() {
-	//   output.innerHTML = this.value;
-	// }
-
 
 	var options={
 		useEasing: true, 
@@ -120,5 +112,10 @@ $( document ).ready(function() {
 		}else{
 			deselectAndUpdateRange(this);
 		}
+	})
+
+	$(".collapse").click(function(){
+		$('.comp-right').addClass('hide');
+		console.log('got here')
 	})
 });

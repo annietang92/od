@@ -587,7 +587,6 @@
                     'width':(100 / _.options.slidesPerRow) + '%',
                     'display': 'inline-block'
                 });
-
         }
 
     };

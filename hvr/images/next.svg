@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="18239-Justice-Ln" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="HV" transform="translate(-1260.000000, -1584.000000)" stroke="#BABCBC" stroke-width="1.5">
+            <g id="Group" transform="translate(1266.000000, 1594.000000) rotate(-90.000000) translate(-1266.000000, -1594.000000) translate(1256.500000, 1588.500000)">
+                <path d="M9.75,8.68933983 L2.09283009,1.03216991 C1.79993687,0.739276695 1.32506313,0.739276695 1.03216991,1.03216991 C0.739276695,1.32506313 0.739276695,1.79993687 1.03216991,2.09283009 L8.9871212,10.0477814 C9.1935039,10.2541641 9.49024174,10.3151224 9.75,10.2306563 C10.0097583,10.3151224 10.3064961,10.2541641 10.5128788,10.0477814 L18.4678301,2.09283009 C18.7607233,1.79993687 18.7607233,1.32506313 18.4678301,1.03216991 C18.1749369,0.739276695 17.7000631,0.739276695 17.4071699,1.03216991 L9.75,8.68933983 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -235,6 +235,15 @@ html, body {
   background-size: cover;
   background-color: #F5F8FB;
 }
+.interstitial{
+  width: 550px;
+  line-height: 1.4em;
+}
+
+h4.interstitial{
+  color:#555B77;
+  line-height: 1.6em;
+}
 
 .main-index{
   min-height: 100vh;

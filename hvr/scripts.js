@@ -17,9 +17,14 @@ $( document ).ready(function() {
 
 	var cur_question = 1
 	$(".blue-button").click(function(){
-		if (cur_question == 9){
+		if (cur_question == 10){
 			cur_question = 1
 		}else{
+			if (cur_question == 9){
+				$('.exact-button').removeClass('hide');
+				$('.blue-button').addClass('hide');
+				$('.white-button').addClass('hide');
+			}
 			cur_question +=1
 		}
 		$(".question").addClass('hide')
@@ -112,10 +117,5 @@ $( document ).ready(function() {
 		}else{
 			deselectAndUpdateRange(this);
 		}
-	})
-
-	$(".collapse").click(function(){
-		$('.comp-right').addClass('hide');
-		console.log('got here')
 	})
 });

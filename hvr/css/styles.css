@@ -152,6 +152,9 @@ input[type="checkbox"]:focus{
 .gray-bg{
   background-color: #F5F8FB !important;
 }
+.white-bg{
+  background-color: white;
+}
 .white-button:hover{
   background-color: #fafafa;
   cursor: pointer;
@@ -284,6 +287,16 @@ h4.interstitial{
   text-align: right;
   margin-right:60px;
 }
+.fixed-section{
+  padding:16px 50px;
+}
+.fixed-section h4{
+  padding:4px 0 !important;
+  font-family: GraphikBold;
+}
+.number{
+  margin-right:30px;
+}
 
 .question{
   margin-left:120px;
@@ -294,6 +307,18 @@ h4.interstitial{
   opacity: .7;
 }
 
+.fixed-section .left{
+  float: left;
+}
+
+.fixed-section .right{
+  float: right;
+}
+
+.header.fixed{
+  top:-90px;
+  transition: all .2s;
+}
 .header{
   z-index: 100;
   position: absolute;
@@ -301,6 +326,9 @@ h4.interstitial{
   height: 85px;
   background-color: white;
   border-bottom: 4px solid #f5f8fb;
+}
+.fixed{
+  position: fixed !important;
 }
 
 .header img{

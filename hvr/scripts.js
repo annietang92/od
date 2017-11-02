@@ -8,6 +8,22 @@ $( document ).ready(function() {
 		prefix: '$', 
 	}
 
+	$(window).scroll(function() {
+        var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+        var os = $('.exact-value').offset().top; // pixels to the top of div1
+        var ht = $('.exact-value').height(); // height of div1 in pixels
+        // if you've scrolled further than the top of div1 plus it's height
+        // change the color. either by adding a class or setting a css property
+        if(scroll > os + ht){
+        	console.log('here')
+            $('.header.fixed').css('top','0px');
+        }
+        if(scroll < (os + ht)){
+        	console.log('here')
+            $('.header.fixed').css('top','-90px');
+        }
+    });
+
 
 	var page_bottom_range = 145000
 	var page_top_range = 165000

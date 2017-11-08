@@ -11,7 +11,7 @@
   <script type="text/javascript" src="countUp.js"></script>
   
 </head>
-<body>
+<body class="bg-lightblue">
   <!--set the right bg to white-->
   <div class="bg-right"></div>
 
@@ -45,6 +45,8 @@
 
     <div class="main-left">
       <div class="estimate">
+        <h5 class="top-percent green strong">+ 8%</h5>
+        <h5 class="bottom-percent red strong">- 4%</h5>
         <h2 class="blue" id="bottom-range">$145,000</h2>
         <h3 class="strong blue">to</h3>
         <h2 class="blue" id ="top-range">$165,000</h2>
@@ -56,9 +58,22 @@
       <!-- question 1-->
       <div class="question ">
 
-        <h1>1 / 9</h1>
+        <h1>To calculate this home’s <br>value, first claim it as yours</h1>
         
-        <h5>Confirm the following public records information about your home</h5>
+        <h5>We want to protect each home’s data. Only the homeowner <br> can modify a home’s details and features.</h5>
+        <div class="sm-spacer"></div>
+        <h6 class="gray">Email</h6>
+        <input class="text" type="text"></input> 
+        <h6 class="gray">Password</h6>
+        <input class="text" type="text"></input> 
+
+      </div>
+
+      <!-- question 1-->
+      <div class="question hide ">
+
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>First, confirm the following details about your home</h5>
         <div class="sm-spacer"></div>
         <h6 class="gray">Bedrooms</h6>
         <input class="text" type="text" value="4"></input> 
@@ -70,8 +85,8 @@
 
       <!-- question 2-->
       <div class="question hide">
-        <h1>2 / 9</h1>
-        <h5>Which countertops does your kitchen have?</h5>
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>Which countertops does your kitchen have?</h5>
         <div class="select-container">
           <div class="sm-spacer"></div>
           <div class="single-select premium">
@@ -103,8 +118,8 @@
 
       <!-- question 3-->
       <div class="question hide">
-        <h1>3 / 9</h1>
-        <h5>What kind of kitchen appliances do you have?</h5>
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>What kind of kitchen appliances do you have?</h5>
         <div class="select-container">
           <div class="sm-spacer"></div>
           <div class="single-select premium">
@@ -136,8 +151,8 @@
 
       <!-- question 4-->
       <div class="question hide">
-        <h1>4 / 9</h1>
-        <h5>Does your kitchen have any of the following features?</h5>
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>Does your kitchen have any of the following features?</h5>
         <div class="select-container">
           <div class="sm-spacer"></div>
           <div id="checkboxes">
@@ -152,8 +167,8 @@
 
       <!-- question 5-->
       <div class="question hide">
-        <h1>5 / 9</h1>
-        <h5>Which features does your master bathroom have?</h5>
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>Which features does your master bathroom have?</h5>
         <div class="select-container">
           <div class="sm-spacer"></div>
           <div id="checkboxes">
@@ -170,8 +185,8 @@
 
       <!-- question 6-->
       <div class="question hide">
-        <h1>6 / 9</h1>
-        <h5>What kind of flooring is in your main living area?</h5>
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>What kind of flooring is in your main living area?</h5>
         <div class="select-container">
           <div class="sm-spacer"></div>
           <div class="single-select premium">
@@ -197,8 +212,8 @@
 
       <!-- question 7-->
       <div class="question hide">
-        <h1>7 / 9</h1>
-        <h5>Is your backyard landscaped?</h5>
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>Is your backyard landscaped?</h5>
         <div class="select-container">
           <div class="sm-spacer"></div>
           <div class="single-select premium">
@@ -219,8 +234,8 @@
 
       <!-- question 8-->
       <div class="question hide">
-        <h1>8 / 9</h1>
-        <h5>Does your home have any of the following features?</h5>
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>Does your home have any of the following features?</h5>
         <div class="select-container">
           <div class="sm-spacer"></div>
           <div id="checkboxes">
@@ -236,8 +251,8 @@
 
       <!-- question 9-->
       <div class="question hide">
-        <h1>9 / 9</h1>
-        <h5>What is the condition of each of the following areas?</h5>
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>What is the condition of each of the following areas?</h5>
         <div class="select-container">
           <div class="sm-spacer"></div>
           <div id="slider">
@@ -248,8 +263,9 @@
               <div class="slider-interactive">
                 <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
                 <div class="slider-labels">
-                  <h6 class="float-left">Needs work</h6>
-                  <h6 class="float-right">Great condition</h6>
+                  <h6 class="slider-left">Needs work</h6>
+                  <h6 class="slider-middle">Typical use</h6>
+                  <h6 class="slider-right">Great condition</h6>
                 </div>
               </div>
             </div>
@@ -261,8 +277,9 @@
               <div class="slider-interactive">
                 <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
                 <div class="slider-labels">
-                  <h6 class="float-left">Needs work</h6>
-                  <h6 class="float-right">Great condition</h6>
+                  <h6 class="slider-left">Needs work</h6>
+                  <h6 class="slider-middle">Typical use</h6>
+                  <h6 class="slider-right">Great condition</h6>
                 </div>
               </div>
             </div>
@@ -274,8 +291,9 @@
               <div class="slider-interactive">
                 <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
                 <div class="slider-labels">
-                  <h6 class="float-left">Needs work</h6>
-                  <h6 class="float-right">Great condition</h6>
+                  <h6 class="slider-left">Needs work</h6>
+                  <h6 class="slider-middle">Typical use</h6>
+                  <h6 class="slider-right">Great condition</h6>
                 </div>
               </div>
             </div>
@@ -287,8 +305,9 @@
               <div class="slider-interactive">
                 <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
                 <div class="slider-labels">
-                  <h6 class="float-left">Needs work</h6>
-                  <h6 class="float-right">Great condition</h6>
+                  <h6 class="slider-left">Needs work</h6>
+                  <h6 class="slider-middle">Typical use</h6>
+                  <h6 class="slider-right">Great condition</h6>
                 </div>
               </div>
             </div>
@@ -300,8 +319,9 @@
               <div class="slider-interactive">
                 <input type="range" min="1" max="5" value="3" class="slider" id="myRange">
                 <div class="slider-labels">
-                  <h6 class="float-left">Needs work</h6>
-                  <h6 class="float-right">Great condition</h6>
+                  <h6 class="slider-left">Needs work</h6>
+                  <h6 class="slider-middle">Typical use</h6>
+                  <h6 class="slider-right">Great condition</h6>
                 </div>
               </div>
             </div>
@@ -311,25 +331,112 @@
 
       <!-- question 10-->
       <div class="question hide">
-        <h1 class="interstitial">Next, tell us about your home's unique features.</h1>
-        <h4 class="interstitial">We understand that a home’s true value comes from it’s unique look and feel.</h4><br><br>
-        <h4 class="interstitial">Upload photos and/or tell us more about unique features, and our home experts will send you an <span class="blue strong underline">exact home value, along with a no-obligation Opendoor offer to buy it within 24 hours.</span>
+        <h1 class="interstitial">Get your exact value and free offer in just a few more clicks</h1>
+        <img class="insterstitial-img" src="./images/interstitial.png">
         </h4>
       </div>
+
+      <!-- question 11-->
+      <div class="question hide">
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>Does your home have any of the following features?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div id="checkboxes">
+            <ul>
+              <li><input type="checkbox"> <span class="checkbox-label">Permitted addition</span></li>
+              <li><input type="checkbox"> <span class="checkbox-label">Unpermitted addition</span></li>
+              <li><input type="checkbox" class="upgraded"> <span class="checkbox-label">Solar panels</span></li>
+              <li><input type="checkbox"> <span class="checkbox-label">Known foundation issues</span></li>
+              <li><input type="checkbox"> <span class="checkbox-label">Gated community</span></li>
+              <li><input type="checkbox"> <span class="checkbox-label">Age-restricted community</span></li>
+              <li><input type="checkbox"> <span class="checkbox-label">Chemical contamination</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- question 13-->
+      <div class="question hide">
+        <div class="sm-spacer"></div>
+        <h5 class='strong'>What else should we know about your home?</h5>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <textarea class="text" type="textarea" rows="8" placeholder="For example, your view, viking oven, back patio..."></textarea> 
+        </div>
+      </div>
+
+      <!--- question 14-->
+
+      <div class="question hide">        
+        <h5 class="strong">How much have you spent on renovations?</h5>
+        <h5 class="gray">We’re specifically looking for upgrades to your home, not repairs <br>or maintenance work.</h5>
+        <div class="sm-spacer"></div>
+        <input class="text" type="text" placeholder="$##,###"></input> 
+      </div>
+
+      <!--- question 15-->
+
+      <div class="question hide">        
+        <h5 class="strong">If you are thinking about selling, what is your sale timeline?</h5>
+        <div class="sm-spacer"></div>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Not selling</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">Just browsing</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">6+ weeks</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">2 - 6 weeks</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">ASAP</h5>
+          </div>
+        </div> 
+      </div>
+
+      <!--- question 16-->
+
+      <div class="question hide">        
+        <h5 class="strong">What is your relationship to this home?</h5>
+        <div class="sm-spacer"></div>
+        <div class="select-container">
+          <div class="sm-spacer"></div>
+          <div class="single-select no-tag">
+            <h5 class="gray">I am the owner</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">I am an agent</h5>
+          </div>
+          <div class="single-select no-tag">
+            <h5 class="gray">I am a homebuilder</h5>
+          </div>
+        </div> 
+      </div>
+
         
       <div class="buttons">
+        <a href="index.html">
+          <div class="white-button">
+            Back
+          </div>
+        </a>
+        <div class="blue-button claim">
+          Claim this home as mine
+        </div>
         <div class="blue-button exact-button hide">
           Next: Get my exact home value
         </div>
-        <div class="blue-button">
-          Next
+        <div class="blue-button normal-button hide">
+          Next: Kitchen appliances
         </div>
-        <a href="index.html">
-          <div class="white-button">
-            Save and return to my home profile
-          </div>
-        </a>
       </div>
+
 
     </div>
 

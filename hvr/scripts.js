@@ -1,5 +1,10 @@
 $( document ).ready(function() {
+	setTimeout(function(){ $( ".notified" ).css("bottom","-10px"); }, 2000);
+	
 
+	$(".notified").click(function(){
+		$(this).css("bottom","-400px")
+	})
 	var options={
 		useEasing: true, 
 		useGrouping: true, 
@@ -33,13 +38,17 @@ $( document ).ready(function() {
 
 	var cur_question = 1
 	$(".blue-button").click(function(){
-		if (cur_question == 10){
+
+		if (cur_question == 16){
 			cur_question = 1
 		}else{
-			if (cur_question == 9){
+			if (cur_question ==1){
+				$('.normal-button').removeClass('hide');
+				$('.claim').addClass('hide');
+			}
+			if (cur_question == 10){
 				$('.exact-button').removeClass('hide');
-				$('.blue-button').addClass('hide');
-				$('.white-button').addClass('hide');
+				$('.normal-button').addClass('hide');
 			}
 			cur_question +=1
 		}
